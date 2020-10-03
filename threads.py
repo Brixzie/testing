@@ -1,14 +1,10 @@
 import threading
 import time
 
-
-start = time.perf_counter()
-
-
-
-
 def emptyMethod():
     return True
+
+start = time.perf_counter()
 
 for x in range(100):
     x = threading.Thread(target=emptyMethod)
